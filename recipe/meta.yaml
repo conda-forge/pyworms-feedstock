@@ -1,5 +1,5 @@
 {% set name = "pyworms" %}
-{% set version = "0.2.0" %}
+{% set version = "0.3.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/iobis/pyworms/archive/{{ version }}.tar.gz
-  sha256: ee0ccd1f132d1af89df9ee02b3c46babc65db49c15635f9a67e25d02e29f6ecd
+  sha256: 7b671d88995508187d56cd228a95d8741bf8eb5f6427201e189073a563bd14b7
 
 build:
   number: 0
