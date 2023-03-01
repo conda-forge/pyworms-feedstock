@@ -16,16 +16,20 @@ build:
 
 requirements:
   host:
-    - python >=3
+    - python >=3.6
     - pip
   run:
-    - python >=3
+    - python >=3.6
     - backports.functools_lru_cache
     - requests
 
 test:
   imports:
     - pyworms
+  commands:
+    - pip check
+  requires:
+    - pip
 
 about:
   home: https://github.com/iobis/pyworms
