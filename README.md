@@ -1,11 +1,11 @@
-About pyworms
-=============
+About pyworms-feedstock
+=======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pyworms-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/iobis/pyworms
 
 Package license: BSD-3-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pyworms-feedstock/blob/main/LICENSE.txt)
 
 Summary: Python client for the WoRMS REST service
 

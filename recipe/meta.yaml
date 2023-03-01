@@ -1,5 +1,5 @@
 {% set name = "pyworms" %}
-{% set version = "0.3.0" %}
+{% set version = "0.4.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/iobis/pyworms/archive/{{ version }}.tar.gz
-  sha256: 7b671d88995508187d56cd228a95d8741bf8eb5f6427201e189073a563bd14b7
+  sha256: f066f87f9199ae5c6a7a9964848c531d358d3514fd5bc15f17392f094d8bc6a7
 
 build:
   number: 0
@@ -16,16 +16,20 @@ build:
 
 requirements:
   host:
-    - python >=3
+    - python >=3.6
     - pip
   run:
-    - python >=3
+    - python >=3.6
     - backports.functools_lru_cache
     - requests
 
 test:
   imports:
     - pyworms
+  commands:
+    - pip check
+  requires:
+    - pip
 
 about:
   home: https://github.com/iobis/pyworms
